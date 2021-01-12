@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel&display=swap");
 
 /*
 =============== 
@@ -432,7 +432,7 @@ Products
   object-fit: cover;
 }
 .product-price {
-  color: var(--clr-primary);
+  color: var(--clr-grey-5);;
 }
 @media screen and (min-width: 768px) {
   .product {
@@ -550,7 +550,7 @@ Contact
   margin-bottom: 1.75rem;
 }
 .contact-title {
-  color: var(--clr-primary);
+  color: var(--clr-grey-5);
   font-weight: 400;
 }
 .contact-text {
@@ -631,4 +631,17 @@ Footer
 }
 .company {
   color: var(--clr-primary);
+}
+
+
+/*
+*  hidden icon names
+*/
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }

@@ -6,6 +6,14 @@ const navClose = document.getElementById("nav-close");
 navBtn.addEventListener("click", () => {
   navbar.classList.add("showNav");
 });
+
+window.onscroll=()=>{
+  if(window.pageYOffset>450){
+    navBtn.style.color=' #617d98';
+  }else{
+    navBtn.style.color='white'
+  }
+}
 // close nav
 navClose.addEventListener("click", () => {
   navbar.classList.remove("showNav");
